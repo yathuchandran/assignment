@@ -19,6 +19,7 @@
     height: 100%;
     background-color: #ff0000;
     margin-left: 0;
+    
   }
   
   .color-2 {
@@ -35,6 +36,7 @@
     height: 100%;
     background-color: #0000ff;
     margin-left: 100%;
+    margin-bottom: 100%;
   }
   
   .color-4 {
@@ -43,5 +45,6 @@
     background-color: #ffff00;
     margin-right: 100%;
     transform: rotate(90deg);
+    margin-right: 100%;
 
   }
