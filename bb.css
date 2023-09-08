@@ -1,95 +1,119 @@
- /* Container for the diamond */
-        .diamond {
-            width: 200px;
-            height: 200px;
-            background-color: #ffffff;
-            margin: 5rem auto;
-            position: relative;
-            transform: rotate(45deg);
-            display: flex;
-            flex-direction: column;
-        }
+.diamond {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    margin: 5rem;
+    position: absolute;
+    /* border-radius: 50%; */
+  
+    /* Create the diamond shape */
+     transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap; 
+  }
 
-        /* Top row of links */
-        .row1 {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-        }
+  .link1{
+    background-color: red;
+    width: 30%;
+    height: 100%;
+   
+  }
+  .link2{
+    background-color: green;
+    width: 30%;
+    height: 100%;
+    /* transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg); */
+    /* position: absolute;
+    left: 0; */
+  }
+  .link3{
+    background-color: yellow;
+    width: 100%;
+    height: 20%;
+    /* transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg); */
+   
+  }
+  .link4{
+    background-color: blue;
+    width: 100%;
+    height: 20%;
+  }
+  .row1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .row2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: static;
+    margin-bottom:200px ;
+  }
+  .aa{
+    z-index: 10;
+  }
+  .align{
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
 
-        /* Bottom row of links */
-        .row2 {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
-        }
+  .lin1{
+    background-color: #dc7c3c;
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    top: 85%;
+    z-index: 3;
+    opacity: 80%;
+  }
+  .lin2{
+    background-color: #cfbd8f;
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    left: 85%;
+    z-index: 3;
+    opacity: 80%;
+  }
+  .lin3{
+    background-color: #3691e5;
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    opacity: 80%;
+  }
+  .lin4{
+    background-color: rgb(204, 102, 204);
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    opacity: 80%;
+  }
+  .cc{
+    color: rgb(0, 0, 0);
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    margin:0.75rem;
+    padding-top: 6rem;
+    padding-left: 1rem;
 
-        /* Individual link boxes */
-        .link1, .link2, .link3, .link4 {
-            flex: 1;
-        }
-
-        /* Colors for the link boxes */
-        .link1 {
-            background-color: red;
-        }
-
-        .link2 {
-            background-color: green;
-        }
-
-        .link3 {
-            background-color: yellow;
-        }
-
-        .link4 {
-            background-color: blue;
-        }
-
-        /* Colored bars for decoration */
-        .lin1, .lin2, .lin3, .lin4 {
-            position: absolute;
-            opacity: 0.8;
-        }
-
-        .lin1 {
-            background-color: #dc7c3c;
-            width: 100%;
-            height: 15%;
-            bottom: 0;
-        }
-
-        .lin2 {
-            background-color: #cfbd8f;
-            width: 15%;
-            height: 100%;
-            right: 0;
-        }
-
-        .lin3 {
-            background-color: #3691e5;
-            width: 15%;
-            height: 100%;
-            left: 0;
-        }
-
-        .lin4 {
-            background-color: rgb(204, 102, 204);
-            width: 100%;
-            height: 15%;
-            top: 0;
-        }
-
-        /* Text and styles for content within link boxes */
-        .cc {
-            color: #000;
-            transform: rotate(-45deg);
-            margin: 0.75rem;
-            padding-top: 1rem;
-            padding-left: 1rem;
-        }
-
-        .spann {
-            color: red;
-        }
+  }
+  .spann{
+    color: red;
+  }
+  
